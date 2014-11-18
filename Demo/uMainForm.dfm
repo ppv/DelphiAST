@@ -30,6 +30,17 @@ object Form1: TForm1
       Caption = 'Open Delphi Unit...'
       OnClick = OpenDelphiUnit1Click
     end
+    object MenuItem_Refresh: TMenuItem
+      Caption = '&Refresh'
+      ShortCut = 116
+      OnClick = MenuItem_RefreshClick
+    end
+    object MenuItem_Copy: TMenuItem
+      Caption = '&Copy'
+      ImageIndex = 1
+      ShortCut = 16451
+      OnClick = MenuItem_CopyClick
+    end
   end
   object OpenDialog1: TOpenDialog
     Filter = 'Delphi Unit|*.pas|Delphi Package|*.dpk|Delphi Project|*.dpr'
