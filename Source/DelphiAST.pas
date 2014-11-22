@@ -996,7 +996,7 @@ end;
 
 procedure TPasSyntaxTreeBuilder.ProcedureDeclarationSection;
 begin
-  FStack.Push('method');
+  FStack.Push(sMETHOD);
   try
     inherited;
   finally

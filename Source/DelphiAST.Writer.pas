@@ -33,6 +33,9 @@ begin
   else
     NewXMLNode := XMLDoc.AddChild(UpperCase(Node.Name));
 
+  if Node.Parent <> nil then
+    NewXMLNode.Attributes['Parent'] := Node.Parent.Name
+
   for Attr in Node.Attributes do
     NewXMLNode.Attributes[Attr.Key] := Attr.Value;
 
